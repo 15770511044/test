@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>外界评价</title>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="cs.js"></script>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body{
+	overflow-x:hidden;
+}
+.img1{
+	
+	position:absolute;
+	text-align:center;
+	height:151px;
+	width:100%;
+	background-color:#136ec2;
+	/*background-color:rgb(59,145,206);*/
+}
+
+.img1 img{
+	height:151px;
+	width:980px;
+}
+/*以上是图片的css*/
+/*+++++++++++++++++++++++++++++++++++++++++*/
+.ul0{
+	
+	position:absolute;
+	top:151px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	line-height:36px;
+	height:36px;
+}
+.ul0 li{
+	min-width:122.5px;
+	background-color:#ebebeb;
+}
+.ul1>li{
+	position:relative;
+	float:left;
+}
+.ul2{
+	height:0;
+	left:0;
+	top:0;
+}
+.ul2 li{
+	opacity:0;
+}
+.ul0 li:hover .ul2 li{
+	opacity:1;
+	line-height:36px;
+	height:36px;
+	top:100px;
+}
+li:hover{
+	background-color:#FFF;
+}
+.ul0 li{
+	text-align:center;
+	z-index:9999;
+}
+a{
+	color:#424242;
+}
+/*以上是导航栏的css*/
+/*++++++++++++++++++++++++++++++++++++*/
+.tu4{
+	position: absolute;
+	top:187px;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	height: 450px;
+	
+}
+.tu4 img{
+	
+	width:980px;
+	height:450px;
+	
+}
+.ig{
+	position: absolute;
+}
+
+
+.tab{
+	/*border: 1px solid #fcc;*/
+	height: 30px;
+	width: 500px;
+    position:absolute;
+    top: 400px;
+    bottom:0;
+    left:350px;
+}
+.tab li{
+    width:20px;
+    height:20px;
+    border:solid 2px #fff;
+    border-radius:50%;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.but{
+	/*border: 1px solid #fcc;*/
+    width:30px;
+    height:50px;
+    position:absolute;
+    top: 180px;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+ }
+.but1{
+    left:0;
+}
+.but2{
+    right:0;
+}
+
+.tab .bg{
+    background-color:#136ec2;
+}
+/*以上是tu4的css*/
+.di{
+	position:absolute;
+	width:100%;
+	height:151px;
+	top:1370px;
+	margin-bottom:20px;
+	background-color:#136ec2;
+}
+.di1{
+	position:absolute;
+	width:980px;;
+	height:151px;
+	background-color:rgb(59,145,206);
+	margin-left:50%;
+	left:-490px;
+}
+.di .di2{
+	position:absolute;
+	background-color:rgb(59,145,206);
+	width:980px;
+	height:28px;
+	margin-top:9px;
+}
+.di .di2 p{
+	font-size:12px;
+	text-align:center;
+	line-height:28px;
+	height:28px;
+	color:#555;
+}
+.di .di1 a:hover{
+	text-decoration:underline;
+}
+.di .di1 a{
+	color:inherit;
+}
+.spanP{
+	padding:10px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.spanP img{
+	margin-top:-80px;
+	margin-left:50%;
+	left:-32px;
+	position:absolute;
+	width:64px;
+	height:64px;
+}
+.wx{
+	position:absolute;
+	margin-top:-18px;
+	margin-left:50%;
+	left:-15px;
+	color:#777;
+}
+
+.yy{
+	position:absolute;
+	top:650px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+}
+.yy p{
+	position: relative;
+	text-indent: 2em;
+	margin-bottom: 20px;
+	margin-left: 330px;
+	line-height: 30px;
+	top: 25px;
+	margin-right: 20px;
+
+}
+
+.yy h2{
+	margin-bottom: 20px;
+}
+
+.yy img{
+	position: relative;
+	width: 300px;
+	height: 600px;
+	top:20px;
+	float: left;
+
+}
+.yy .yy_1 .span{
+	color: rgb(85,85,85);
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+
+.yy .yy_1{
+	position:relative;
+	width: 250px;
+	float: left;
+	margin-right: 20px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="img1">
+	<img src="image/tu0.jpg" alt="中国维和部队" title="中国维和部队">
+</div>
+<div class="ul0">
+	<ul class="ul1">
+    	<li> <a href="index.html" target="blank">首页</li>
+    	<li><a href="page1.html" target="blank">产生背景</a>
+        	<ul class="ul2">
+            	<li><a href="page2.html" target="blank">部队任务</a></li>
+                <li><a href="page3.html" target="blank">维和原则</a></li>
+            </ul>
+        </li>
+        <li><a href="page4.html" target="blank">活动形式</a>
+        	<ul class="ul2">
+            	<li><a href="page5.html" target="blank">行动分类</a></li>
+                <li><a href="page6.html" target="blank">行动原则</a></li>
+            </ul>
+        </li>
+        <li><a href="page7.html" target="blank">部队规模</a>
+        	<ul class="ul2">
+            	<li><a href="page8.html" target="blank">历史沿革</a></li>
+            </ul>
+        </li>
+        <li><a href="page9.html" target="blank">殉职名单</a></li>
+        <li><a href="page10.html" target="blank">主要业绩</a>
+        	<ul class="ul2">
+            	<li><a href="page11.html" target="blank">重要意义</a></li>
+            </ul>
+        </li>
+        <li><a href="page12.html" target="blank">外界评价</a>
+        	<ul class="ul2">
+            	<li><a href="page13.html" target="blank">维和动态</a></li>
+            </ul>
+        </li>
+        <li><a href="page14.html" target="blank">利比亚维和</a>
+        	<ul class="ul2">
+            	<li><a href="page15.html" target="blank">南苏丹维和</a></li>
+                <li><a href="page16.html" target="blank">苏丹维和</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="tu4">
+         <div class="igs">
+             <div class="ig"><img src="image/tu4.jpg" /></div>
+             <div class="ig"><img src="image/lunbo1.jpg" /></div>
+             <div class="ig"><img src="image/lunbo2.jpg" /></div>
+             <div class="ig"><img src="image/lunbo3.jpg" /></div>
+         </div>
+         <ul class="tab">
+             <li class="bg"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+         <div class="but but1">&lt;</div>
+         <div class="but but2">&gt;</div>
+     </div>
+
+
+<div class="yy">
+	<h2>外界评价</h2>
+	<div class="yy_1">
+		<img src="image/tupj.jpg" title="中国维和军人" alt="中国维和军人">
+		<!-- <span class="span">联合国塞浦路斯维和部队司令刘超少将</span> -->
+	</div>
+	<p>中国军人在圆满完成各种维和任务的同时，还积极传播友谊，为驻地建设勤奋工作。历经长达14年的内战后，利比里亚国内基础设施破坏殆尽，物资奇缺。中国“蓝盔”部队来到后，主动帮助驻地修建了“友谊”、“行政”等数条主要道路。此外，他们还积极向当地百姓传授各种技术，帮助他们脱贫致富。中国军人选派了一些懂水稻种植技术的官兵，手把手地教老百姓种植。中国军人的真情和友谊感动了许多当地人，他们把中国军人当作了自己的亲人。</p>
+	<p>2009年黎以冲突后，黎巴嫩南部地区的道路、桥梁等基础设施遭到严重破坏。为帮助当地群众重建家园，中国维和部队每天出动多台次的机械和人员，整治道路，清理废墟。每当看见中国维和工兵营的推土机平整道路时，路过的车辆总要鸣笛致意。黎以冲突期间，中国政府无偿向黎巴嫩捐赠了救援物资，使黎巴嫩人民感受到中国人民的和平友善之举。每每见到中国维和官兵，不少当地百姓用刚学会的中文不停地喊：“中国人，ok！”</p>
+	<p>改革开放40年来，中国在军事外交领域取得丰硕成果，“特别是在海外维和方面的贡献越来越大”。1990年4月，中国首次向联合国停战监督组织派出5名军事观察员，时至今日，中国军队实现了派遣维和人员从无到有、兵力规模从小到大、部队类型从单一到多样的历史性跨越。</p>
+	<p>随着国力不断增强，中国军队将加大参与国际维和、国际人道主义救援等行动的力度，在力所能及范围内承担更多国际责任和义务，提供更多公共安全产品，为维护世界和平、促进共同发展作出更大贡献，这也是中国的大国担当与国际责任。</p>
+	
+</div>
+
+
+
+<div class="di">
+	<div class="di1">
+    <div class="spanP">
+    <span>关于我们</span>
+    <p>地址：江西省九江市濂溪区1188号</p>
+    <p><a href="tel:15770511044">联系电话：123-123456</a></p>
+    <p><a href="mailto:1241804731@qq.com">邮箱：1241804731@qq.com</a></p>
+    <img src="image/ewm.png" alt="微信" title="微信">
+    </div>
+    <span class="wx">微信</span>
+    	<div class="di2">
+        	<p>本网页由miss制作 推荐使用谷歌浏览器浏览网页</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

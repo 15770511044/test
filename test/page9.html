@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>殉职名单</title>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="cs.js"></script>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body{
+	overflow-x:hidden;
+}
+.img1{
+	
+	position:absolute;
+	text-align:center;
+	height:151px;
+	width:100%;
+	background-color:#136ec2;
+	/*background-color:rgb(59,145,206);*/
+}
+
+.img1 img{
+	height:151px;
+	width:980px;
+}
+/*以上是图片的css*/
+/*+++++++++++++++++++++++++++++++++++++++++*/
+.ul0{
+	
+	position:absolute;
+	top:151px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	line-height:36px;
+	height:36px;
+}
+.ul0 li{
+	min-width:122.5px;
+	background-color:#ebebeb;
+}
+.ul1>li{
+	position:relative;
+	float:left;
+}
+.ul2{
+	height:0;
+	left:0;
+	top:0;
+}
+.ul2 li{
+	opacity:0;
+}
+.ul0 li:hover .ul2 li{
+	opacity:1;
+	line-height:36px;
+	height:36px;
+	top:100px;
+}
+li:hover{
+	background-color:#FFF;
+}
+.ul0 li{
+	text-align:center;
+	z-index:9999;
+}
+a{
+	color:#424242;
+}
+/*以上是导航栏的css*/
+/*++++++++++++++++++++++++++++++++++++*/
+.tu4{
+	position: absolute;
+	top:187px;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	height: 450px;
+	
+}
+.tu4 img{
+	
+	width:980px;
+	height:450px;
+	
+}
+.ig{
+	position: absolute;
+}
+
+
+.tab{
+	/*border: 1px solid #fcc;*/
+	height: 30px;
+	width: 500px;
+    position:absolute;
+    top: 400px;
+    bottom:0;
+    left:350px;
+}
+.tab li{
+    width:20px;
+    height:20px;
+    border:solid 2px #fff;
+    border-radius:50%;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.but{
+	/*border: 1px solid #fcc;*/
+    width:30px;
+    height:50px;
+    position:absolute;
+    top: 180px;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+ }
+.but1{
+    left:0;
+}
+.but2{
+    right:0;
+}
+
+.tab .bg{
+    background-color:#136ec2;
+}
+/*以上是tu4的css*/
+.di{
+	position:absolute;
+	width:100%;
+	height:151px;
+	top:1550px;
+	margin-bottom:20px;
+	background-color:#136ec2;
+}
+.di1{
+	position:absolute;
+	width:980px;;
+	height:151px;
+	background-color:rgb(59,145,206);
+	margin-left:50%;
+	left:-490px;
+}
+.di .di2{
+	position:absolute;
+	background-color:rgb(59,145,206);
+	width:980px;
+	height:28px;
+	margin-top:9px;
+}
+.di .di2 p{
+	font-size:12px;
+	text-align:center;
+	line-height:28px;
+	height:28px;
+	color:#555;
+}
+.di .di1 a:hover{
+	text-decoration:underline;
+}
+.di .di1 a{
+	color:inherit;
+}
+.spanP{
+	padding:10px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.spanP img{
+	margin-top:-80px;
+	margin-left:50%;
+	left:-32px;
+	position:absolute;
+	width:64px;
+	height:64px;
+}
+.wx{
+	position:absolute;
+	margin-top:-18px;
+	margin-left:50%;
+	left:-15px;
+	color:#777;
+}
+
+.xz{
+	position:absolute;
+	top:650px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+}
+.xz p{
+	position: relative;
+	text-indent: 2em;
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+
+.xz h2{
+	margin-bottom: 30px;
+	margin-right: 20px;
+	float: left;
+}
+.xz hr{
+	position: relative;
+	top: 15px;
+	border: 1px solid rgb(224,224,224);
+}
+
+.xz .img{
+	position: relative;
+	width: 250px;
+	height: 222px;
+	border: 1px solid rgb(224,224,224);
+	margin-left: 20px;
+	float: right;
+	margin-left: 30px;
+}
+.xz .xz_1 .img p{
+	position: relative;
+	top: 0;
+	color: rgb(85,85,85);
+	text-indent: 0;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.xz img{
+	position: relative;
+	width: 250px;
+	height: 192px;
+	float:right;
+
+}
+.xz .xz_1 .span{
+	color: rgb(85,85,85);
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+.xz span{
+	font-weight: 600;
+}
+
+.xz .xz_1 p{
+	position:relative;
+	top:30px;
+}
+</style>
+</head>
+<body>
+	<div class="img1">
+		<img src="image/tu0.jpg" alt="中国维和部队" title="中国维和部队">
+	</div>
+	<div class="ul0">
+		<ul class="ul1">
+	    	<li> <a href="index.html" target="blank">首页</li>
+	    	<li><a href="page1.html" target="blank">产生背景</a>
+	        	<ul class="ul2">
+	            	<li><a href="page2.html" target="blank">部队任务</a></li>
+	                <li><a href="page3.html" target="blank">维和原则</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page4.html" target="blank">活动形式</a>
+	        	<ul class="ul2">
+	            	<li><a href="page5.html" target="blank">行动分类</a></li>
+	                <li><a href="page6.html" target="blank">行动原则</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page7.html" target="blank">部队规模</a>
+	        	<ul class="ul2">
+	            	<li><a href="page8.html" target="blank">历史沿革</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page9.html" target="blank">殉职名单</a></li>
+	        <li><a href="page10.html" target="blank">主要业绩</a>
+	        	<ul class="ul2">
+	            	<li><a href="page11.html" target="blank">重要意义</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page12.html" target="blank">外界评价</a>
+	        	<ul class="ul2">
+	            	<li><a href="page13.html" target="blank">维和动态</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page14.html" target="blank">利比亚维和</a>
+	        	<ul class="ul2">
+	            	<li><a href="page15.html" target="blank">南苏丹维和</a></li>
+	                <li><a href="page16.html" target="blank">苏丹维和</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+	<div class="tu4">
+         <div class="igs">
+             <div class="ig"><img src="image/tu4.jpg" /></div>
+             <div class="ig"><img src="image/lunbo1.jpg" /></div>
+             <div class="ig"><img src="image/lunbo2.jpg" /></div>
+             <div class="ig"><img src="image/lunbo3.jpg" /></div>
+         </div>
+         <ul class="tab">
+             <li class="bg"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+         <div class="but but1">&lt;</div>
+         <div class="but but2">&gt;</div>
+     </div>
+
+	<div class="xz">
+		<h2>殉职名单</h2><hr>
+		<div class="xz_1">
+			<p>中国维和牺牲第一人是<span>刘鸣放</span>。1992年4月，中国第一支蓝盔军事工程大队赴<span>柬埔寨</span>执行任务。就在这年5月，驻<span>柬埔寨</span>的军事观察员<span>刘鸣放</span>感染脑疟疾，1993年1月医治无效不幸牺牲。</p>
+			<p>接下来在<span>柬埔寨</span>又有两人牺牲。1993年5月，正在<span>柬埔寨</span>执行任务的中国维和官兵大本营遭到不明身份武装分子的多枚火箭弹袭击。工程兵大队战士<span>陈知国</span>和<span>余仕利</span>当场牺牲。<span>柬埔寨</span>国防部于2006年在当地为<span>陈知国</span>和<span>余仕利</span>两位烈士建立了纪念碑。</p>
+			<p>1994年5月，<span>联合国</span>驻伊拉克－科威特的军事观察员<span>雷润民</span>在执行维和任务中，被一辆面包车碾压，当场殉职。2003年，他被<span>联合国</span>追授了勋章。<span>雷润民</span>的儿子后来成为<span>联合国</span>情报员，完成了他父亲的未竟心愿。</p>
+			<p>2003年3月13日，中国化学武器检查专家、<span>联合国</span>对伊武器检查员<span>郁建兴</span>上校，在伊拉克检查一处违禁武器嫌疑点后返回巴格达的途中，乘坐的越野车撞上一辆大卡车，<span>郁建兴</span>头部严重受伤，半小时后不治身亡，不满39岁。</p>
+			<p>2003年5月，中国赴刚果（金）维和工兵连建筑分队3班班长付清礼在高温下洗刷装载机上的污泥，突然中暑晕倒，抢救无效牺牲，年仅26岁。</p>
+			<p>2005年10月24日，中国赴利比里亚维和运输分队士官<span>张明</span>在与战友外出执行任务时，被子弹击中头部，不幸牺牲。事后，<span>联合国</span>秘书长安南专门发来唁电。</p>
+			<p>2006年7月26日凌晨，<span>联合国</span>军事观察员<span>杜照宇</span>中校，在黎巴嫩的<span>联合国</span>观察哨所遭到冲突炮火空袭。<span>杜照宇</span>与来自芬兰、奥地利、加拿大的其他3名<span>联合国</span>军事观察员不幸殉难。事件发生后，联合国秘书长安南及安理会谴责以色列暴行。</p>
+			<div class="img">
+				<img src="image/tuxz.jpg">
+				<p>海地地震遇难中国维和警察</p>
+			</div>
+			<p>2010年1月13日，海地首都太子港发生里氏7.3级强烈地震，造成重大人员伤亡和财产损失。正在当地执行维和任务的<span>朱晓平、郭宝山、王树林、李晓明、赵化宇、李钦、钟荐勤、和志虹</span>8位中国维和人员以身殉职。</p>
+			
+			<p>2016年6月1日凌晨，中国驻马里维和部队遭到基地分子火箭弹袭击，三级士官<span>申亮亮</span>不幸遇难，年仅29岁。</p>
+			<p>2016年7月10日，当地时间18时39分，南苏丹政府军与反政府军继续在首都朱巴交火，我赴南苏丹维和步兵营1辆装甲车在联南苏团总部营地执行难民营警戒任务时，突遭一发炮弹袭击，在这次遭受武装分子袭击中，中国维和人员<span>李磊、杨树朋</span>牺牲，另有2人重伤、3人轻伤。</p>
+		</div>
+	</div>
+	<div class="di">
+		<div class="di1">
+	    <div class="spanP">
+	    <span>关于我们</span>
+	    <p>地址：江西省九江市濂溪区1188号</p>
+	    <p><a href="tel:15770511044">联系电话：123-123456</a></p>
+	    <p><a href="mailto:1241804731@qq.com">邮箱：1241804731@qq.com</a></p>
+	    <img src="image/ewm.png" alt="微信" title="微信">
+	    </div>
+	    <span class="wx">微信</span>
+	    	<div class="di2">
+	        	<p>本网页由miss制作 推荐使用谷歌浏览器浏览网页</p>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

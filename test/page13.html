@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>维和动态</title>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="cs.js"></script>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body{
+	overflow-x:hidden;
+}
+.img1{
+	
+	position:absolute;
+	text-align:center;
+	height:151px;
+	width:100%;
+	background-color:#136ec2;
+	/*background-color:rgb(59,145,206);*/
+}
+
+.img1 img{
+	height:151px;
+	width:980px;
+}
+/*以上是图片的css*/
+/*+++++++++++++++++++++++++++++++++++++++++*/
+.ul0{
+	
+	position:absolute;
+	top:151px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	line-height:36px;
+	height:36px;
+}
+.ul0 li{
+	min-width:122.5px;
+	background-color:#ebebeb;
+}
+.ul1>li{
+	position:relative;
+	float:left;
+}
+.ul2{
+	height:0;
+	left:0;
+	top:0;
+}
+.ul2 li{
+	opacity:0;
+}
+.ul0 li:hover .ul2 li{
+	opacity:1;
+	line-height:36px;
+	height:36px;
+	top:100px;
+}
+li:hover{
+	background-color:#FFF;
+}
+.ul0 li{
+	text-align:center;
+	z-index:9999;
+}
+a{
+	color:#424242;
+}
+/*以上是导航栏的css*/
+/*++++++++++++++++++++++++++++++++++++*/
+.tu4{
+	position: absolute;
+	top:187px;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	height: 450px;
+	
+}
+.tu4 img{
+	
+	width:980px;
+	height:450px;
+	
+}
+.ig{
+	position: absolute;
+}
+
+
+.tab{
+	/*border: 1px solid #fcc;*/
+	height: 30px;
+	width: 500px;
+    position:absolute;
+    top: 400px;
+    bottom:0;
+    left:350px;
+}
+.tab li{
+    width:20px;
+    height:20px;
+    border:solid 2px #fff;
+    border-radius:50%;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.but{
+	/*border: 1px solid #fcc;*/
+    width:30px;
+    height:50px;
+    position:absolute;
+    top: 180px;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+ }
+.but1{
+    left:0;
+}
+.but2{
+    right:0;
+}
+
+.tab .bg{
+    background-color:#136ec2;
+}
+/*以上是tu4的css*/
+.di{
+	position:absolute;
+	width:100%;
+	height:151px;
+	top:1130px;
+	margin-bottom:20px;
+	background-color:#136ec2;
+}
+.di1{
+	position:absolute;
+	width:980px;;
+	height:151px;
+	background-color:rgb(59,145,206);
+	margin-left:50%;
+	left:-490px;
+}
+.di .di2{
+	position:absolute;
+	background-color:rgb(59,145,206);
+	width:980px;
+	height:28px;
+	margin-top:9px;
+}
+.di .di2 p{
+	font-size:12px;
+	text-align:center;
+	line-height:28px;
+	height:28px;
+	color:#555;
+}
+.di .di1 a:hover{
+	text-decoration:underline;
+}
+.di .di1 a{
+	color:inherit;
+}
+.spanP{
+	padding:10px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.spanP img{
+	margin-top:-80px;
+	margin-left:50%;
+	left:-32px;
+	position:absolute;
+	width:64px;
+	height:64px;
+}
+.wx{
+	position:absolute;
+	margin-top:-18px;
+	margin-left:50%;
+	left:-15px;
+	color:#777;
+}
+.dt{
+	position:absolute;
+	top:650px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	height: 480px;
+}
+
+
+.dt h2{
+	margin-bottom: 10px;
+
+}
+.dt .dt_1{
+	position: absolute;
+	/*border: 1px solid rgb(224,224,224);*/
+	width: 480px;
+	height: 450px;
+	
+}
+.dt .dt_1 img,.dt .dt_2 img{
+	position: relative;
+	width: 300px;
+	margin-right: 30px;
+	float: left;
+
+}
+
+.dt .dt_2{
+	position: relative;
+	/*border: 1px solid rgb(224,224,224);*/
+	width: 480px;
+	height: 450px;
+	float: right;
+}
+.dt .dt_1 p,.dt .dt_2 p{
+	text-indent: 2em;
+	line-height: 32px;
+}
+</style>
+</head>
+<body>
+	<div class="img1">
+		<img src="image/tu0.jpg" alt="中国维和部队" title="中国维和部队">
+	</div>
+	<div class="ul0">
+		<ul class="ul1">
+	    	<li> <a href="index.html" target="blank">首页</li>
+	    	<li><a href="page1.html" target="blank">产生背景</a>
+	        	<ul class="ul2">
+	            	<li><a href="page2.html" target="blank">部队任务</a></li>
+	                <li><a href="page3.html" target="blank">维和原则</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page4.html" target="blank">活动形式</a>
+	        	<ul class="ul2">
+	            	<li><a href="page5.html" target="blank">行动分类</a></li>
+	                <li><a href="page6.html" target="blank">行动原则</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page7.html" target="blank">部队规模</a>
+	        	<ul class="ul2">
+	            	<li><a href="page8.html" target="blank">历史沿革</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page9.html" target="blank">殉职名单</a></li>
+	        <li><a href="page10.html" target="blank">主要业绩</a>
+	        	<ul class="ul2">
+	            	<li><a href="page11.html" target="blank">重要意义</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page12.html" target="blank">外界评价</a>
+	        	<ul class="ul2">
+	            	<li><a href="page13.html" target="blank">维和动态</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page14.html" target="blank">利比亚维和</a>
+	        	<ul class="ul2">
+	            	<li><a href="page15.html" target="blank">南苏丹维和</a></li>
+	                <li><a href="page16.html" target="blank">苏丹维和</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+	<div class="tu4">
+         <div class="igs">
+             <div class="ig"><img src="image/tu4.jpg" /></div>
+             <div class="ig"><img src="image/lunbo1.jpg" /></div>
+             <div class="ig"><img src="image/lunbo2.jpg" /></div>
+             <div class="ig"><img src="image/lunbo3.jpg" /></div>
+         </div>
+         <ul class="tab">
+             <li class="bg"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+         <div class="but but1">&lt;</div>
+         <div class="but but2">&gt;</div>
+     </div>
+
+
+	<div class="dt">
+		<h2>维和动态</h2>
+		<div class="dt_1">
+			<img src="image/tudt_1.jpg" title="维和动态" alt="维和动态">
+			<p>2月5日，“世界土壤日”，中国第八批赴南苏丹（瓦屋）维和工兵科瓦乔克营里，来了一群各种肤色的外国人，围在中国营地的菜地周围，学习蔬菜种植技术。</p>
+			<p>这是联合国民事部门和世界粮农组织共同组织的一次参观学习，十个南苏丹当地家庭，和联合国的军事、民事人员参加到活动中。中国维和官兵在现场演示讲解了菜地整理、肥料发酵、育苗播种、简易灌溉等技术，并将如何提高粮食产量制作成小册子免费发放到当地居民手中。</p>
+		</div>
+		<div class="dt_2">
+			<img src="image/tudt_2.jpg" title="维和动态" alt="维和动态">
+			<p>中国维和部队刚刚部署到科瓦乔克没多久，联合国的工作人员就找到中国维和人员，希望能够在土壤日那天到中国营区的菜地里参观学习。 南苏丹有大片的可耕种土地没有被利用，这里的人民只能靠救济解决吃饭问题，目前迫切需要提高当地民众对土壤的认识，让他们靠自己的双手填饱肚子</p>
+			<p>中国维和部队愉快地受领了这项任务，并安排在土壤日这一天，教大家种菜！以突出“土壤是粮食安全、水安全和更广泛的生态安全的基础”主题。</p>
+		</div>
+		
+	</div>
+
+
+
+	<div class="di">
+		<div class="di1">
+	    <div class="spanP">
+	    <span>关于我们</span>
+	    <p>地址：江西省九江市濂溪区1188号</p>
+	    <p><a href="tel:15770511044">联系电话：123-123456</a></p>
+	    <p><a href="mailto:1241804731@qq.com">邮箱：1241804731@qq.com</a></p>
+	    <img src="image/ewm.png" alt="微信" title="微信">
+	    </div>
+	    <span class="wx">微信</span>
+	    	<div class="di2">
+	        	<p>本网页由miss制作 推荐使用谷歌浏览器浏览网页</p>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

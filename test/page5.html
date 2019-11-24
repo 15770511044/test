@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>行动分类</title>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="cs.js"></script>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body{
+	overflow-x:hidden;
+}
+.img1{
+	
+	position:absolute;
+	text-align:center;
+	height:151px;
+	width:100%;
+	background-color:#136ec2;
+	/*background-color:rgb(59,145,206);*/
+}
+
+.img1 img{
+	height:151px;
+	width:980px;
+}
+/*以上是图片的css*/
+/*+++++++++++++++++++++++++++++++++++++++++*/
+.ul0{
+	
+	position:absolute;
+	top:151px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	line-height:36px;
+	height:36px;
+}
+.ul0 li{
+	min-width:122.5px;
+	background-color:#ebebeb;
+}
+.ul1>li{
+	position:relative;
+	float:left;
+}
+.ul2{
+	height:0;
+	left:0;
+	top:0;
+}
+.ul2 li{
+	opacity:0;
+}
+.ul0 li:hover .ul2 li{
+	opacity:1;
+	line-height:36px;
+	height:36px;
+	top:100px;
+}
+li:hover{
+	background-color:#FFF;
+}
+.ul0 li{
+	text-align:center;
+	z-index:9999;
+}
+a{
+	color:#424242;
+}
+/*以上是导航栏的css*/
+/*++++++++++++++++++++++++++++++++++++*/
+.tu4{
+	position: absolute;
+	top:187px;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	height: 450px;
+	
+}
+.tu4 img{
+	
+	width:980px;
+	height:450px;
+	
+}
+.ig{
+	position: absolute;
+}
+
+
+.tab{
+	/*border: 1px solid #fcc;*/
+	height: 30px;
+	width: 500px;
+    position:absolute;
+    top: 400px;
+    bottom:0;
+    left:350px;
+}
+.tab li{
+    width:20px;
+    height:20px;
+    border:solid 2px #fff;
+    border-radius:50%;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.but{
+	/*border: 1px solid #fcc;*/
+    width:30px;
+    height:50px;
+    position:absolute;
+    top: 180px;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+ }
+.but1{
+    left:0;
+}
+.but2{
+    right:0;
+}
+
+.tab .bg{
+    background-color:#136ec2;
+}
+/*以上是tu4的css*/
+.di{
+	position:absolute;
+	width:100%;
+	height:151px;
+	top:1200px;
+	margin-bottom:20px;
+	background-color:#136ec2;
+}
+.di1{
+	position:absolute;
+	width:980px;;
+	height:151px;
+	background-color:rgb(59,145,206);
+	margin-left:50%;
+	left:-490px;
+}
+.di .di2{
+	position:absolute;
+	background-color:rgb(59,145,206);
+	width:980px;
+	height:28px;
+	margin-top:9px;
+}
+.di .di2 p{
+	font-size:12px;
+	text-align:center;
+	line-height:28px;
+	height:28px;
+	color:#555;
+}
+.di .di1 a:hover{
+	text-decoration:underline;
+}
+.di .di1 a{
+	color:inherit;
+}
+.spanP{
+	padding:10px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.spanP img{
+	margin-top:-80px;
+	margin-left:50%;
+	left:-32px;
+	position:absolute;
+	width:64px;
+	height:64px;
+}
+.wx{
+	position:absolute;
+	margin-top:-18px;
+	margin-left:50%;
+	left:-15px;
+	color:#777;
+}
+
+.fl{
+	position:absolute;
+	top:650px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+}
+.fl p{
+	position: relative;
+	text-indent: 2em;
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+.fl .p{
+	margin-left: 280px;
+}
+.fl h2{
+	margin-bottom: 30px;
+}
+
+.fl img{
+	position: relative;
+	width: 250px;
+	height: 192px;
+	float: left;
+
+}
+.fl span{
+	color: rgb(85,85,85);
+	font-size: 15px;
+	line-height: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.fl .fl_1{
+	position:relative;
+	width: 250px;
+	height: 222px;
+	float: left;
+	border: 1px solid rgb(224,224,244);
+}
+</style>
+</head>
+<body>
+	<div class="img1">
+		<img src="image/tu0.jpg" alt="中国维和部队" title="中国维和部队">
+	</div>
+	<div class="ul0">
+		<ul class="ul1">
+	    	<li> <a href="index.html" target="blank">首页</li>
+	    	<li><a href="page1.html" target="blank">产生背景</a>
+	        	<ul class="ul2">
+	            	<li><a href="page2.html" target="blank">部队任务</a></li>
+	                <li><a href="page3.html" target="blank">维和原则</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page4.html" target="blank">活动形式</a>
+	        	<ul class="ul2">
+	            	<li><a href="page5.html" target="blank">行动分类</a></li>
+	                <li><a href="page6.html" target="blank">行动原则</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page7.html" target="blank">部队规模</a>
+	        	<ul class="ul2">
+	            	<li><a href="page8.html" target="blank">历史沿革</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page9.html" target="blank">殉职名单</a></li>
+	        <li><a href="page10.html" target="blank">主要业绩</a>
+	        	<ul class="ul2">
+	            	<li><a href="page11.html" target="blank">重要意义</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page12.html" target="blank">外界评价</a>
+	        	<ul class="ul2">
+	            	<li><a href="page13.html" target="blank">维和动态</a></li>
+	            </ul>
+	        </li>
+	        <li><a href="page14.html" target="blank">利比亚维和</a>
+	        	<ul class="ul2">
+	            	<li><a href="page15.html" target="blank">南苏丹维和</a></li>
+	                <li><a href="page16.html" target="blank">苏丹维和</a></li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+	<div class="tu4">
+         <div class="igs">
+             <div class="ig"><img src="image/tu4.jpg" /></div>
+             <div class="ig"><img src="image/lunbo1.jpg" /></div>
+             <div class="ig"><img src="image/lunbo2.jpg" /></div>
+             <div class="ig"><img src="image/lunbo3.jpg" /></div>
+         </div>
+         <ul class="tab">
+             <li class="bg"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+         <div class="but but1">&lt;</div>
+         <div class="but but2">&gt;</div>
+     </div>
+
+
+	<div class="fl">
+		<h2>行动分类</h2>
+		<div class="fl_1">
+			<img src="image/tufl.jpg" title="中国维和军人" alt="中国维和军人">
+			<span>中国维和军人</span>
+		</div>
+		<p class="p">维和行动主要分为两类：由秘书长直接领导的联合国维和行动（有军事观察团和维和部队两种形式）和由安理会批准、秘书长授权、由地区组织或大国参与指挥的维和行动（有多国部队和“人道主义干预部队”两种形式）。从第二次世界大战结束后至2000年5月，联合国已组织68次维持和平行动，共投入了75万多军人、警察和民政人员。其目的已从传统的监督停火、居中斡旋，扩大到开展预防性外交、维持和平与重建和平。其任务包括监督停火、停战、撤军；使冲突双方脱离接触；观察、报告局势；帮助执行和平协议；防止非法越界或渗透以及维持冲突地区的治安等。随着国际形势的变化，维和行动的任务范围也逐渐扩大，涉及到监督选举、全民公决、保护和分发人道主义援助，以及帮助扫雷和难民重返家园等许多非传统性的工作。</p>
+		<p>参与维和队伍的人员除了军事人员以外，还有民事警察和文职人员。联合国维持和平部队在维护和恢复地区和平和帮助解决地区冲突作出了积极的贡献，它的职能和作用也越来越为世人瞩目。1988年挪威诺贝尔奖委员会将诺贝尔和平奖授予这支头戴蓝色贝雷帽的部队。</p>
+		<p>首任中国政府非洲事务特别代表刘贵今表示,中国一直大力参与联合国、非盟在非洲的维和行动,是安理会五个常任理事国中派出部队最多的。这也是为什么中国出行在外，会有很多当地国人对中国人很友好的原因之一。</p>
+		<p>“每一次出勤,都意味着与‘死神’的亲密接触”——中国维和警察防暴队</p>
+	</div>
+
+
+
+	<div class="di">
+		<div class="di1">
+	    <div class="spanP">
+	    <span>关于我们</span>
+	    <p>地址：江西省九江市濂溪区1188号</p>
+	    <p><a href="tel:15770511044">联系电话：123-123456</a></p>
+	    <p><a href="mailto:1241804731@qq.com">邮箱：1241804731@qq.com</a></p>
+	    <img src="image/ewm.png" alt="微信" title="微信">
+	    </div>
+	    <span class="wx">微信</span>
+	    	<div class="di2">
+	        	<p>本网页由miss制作 推荐使用谷歌浏览器浏览网页</p>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

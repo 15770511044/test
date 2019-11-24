@@ -1,0 +1,263 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+body{
+	overflow-x:hidden;
+}
+
+.img1{
+	position:absolute;
+	text-align:center;
+	height:151px;
+	width:100%;
+	background-color:#136ec2;
+	/*background-color:rgb(59,145,206);*/
+}
+
+.img1 img{
+	height:151px;
+	width:980px;
+}
+/*以上是图片的css*/
+/*+++++++++++++++++++++++++++++++++++++++++*/
+.ul0{
+	
+	position:absolute;
+	top:151px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	line-height:36px;
+	height:36px;
+}
+.ul0 li{
+	min-width:122.5px;
+	background-color:#ebebeb;
+}
+.ul1>li{
+	position:relative;
+	float:left;
+}
+.ul2{
+	height:0;
+	left:0;
+	top:0;
+}
+.ul2 li{
+	opacity:0;
+}
+.ul0 li:hover .ul2 li{
+	opacity:1;
+	line-height:36px;
+	height:36px;
+	top:100px;
+}
+li:hover{
+	background-color:#FFF;
+}
+.ul0 li{
+	text-align:center;
+	z-index:9999;
+}
+a{
+	color:#424242;
+}
+/*以上是导航栏的css*/
+/*++++++++++++++++++++++++++++++++++++*/
+.tu4{
+	position: absolute;
+	top:187px;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	height: 450px;
+	
+}
+.tu4 img{
+	
+	width:980px;
+	height:450px;
+	
+}
+.ig{
+	position: absolute;
+}
+
+
+.tab{
+	/*border: 1px solid #fcc;*/
+	height: 30px;
+	width: 500px;
+    position:absolute;
+    top: 400px;
+    bottom:0;
+    left:350px;
+}
+.tab li{
+    width:20px;
+    height:20px;
+    border:solid 2px #fff;
+    border-radius:50%;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.but{
+	/*border: 1px solid #fcc;*/
+    width:30px;
+    height:50px;
+    position:absolute;
+    top: 180px;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+ }
+.but1{
+    left:0;
+}
+.but2{
+    right:0;
+}
+
+.tab .bg{
+    background-color:#136ec2;
+}
+/*以上是tu4的css*/
+.zw{
+	position:absolute;
+	top:650px;
+	width:980px;
+	margin-left:50%;
+	left:-490px;
+	
+}
+.box{
+	
+	position:relative;
+	top:50px;
+	line-height:26px;
+	padding:0 0 20px 0;
+}
+.zw p{
+	text-indent:2em;
+}
+.zw0 .zw1{
+	margin-right:50px;
+}
+.zw0 .zw2{
+	margin-right:140px;
+}
+.zw3 .zw4{
+	margin-left:50px;
+}
+.zw3 .zw2{
+	margin-left:50px;
+}
+.zw0,.zw3{
+	text-indent:2em;
+}
+.zw .zw1{
+	color:#999;
+}
+.zw5{
+	color:#999;
+	margin-left:72px;
+}
+hr{
+	border:1px dashed #ccc;
+}
+h2{
+	line-height:56px;
+	
+}
+.p{
+	margin-top:10px;
+}
+/*以上是正文的css*/
+.zw .tu5 img{
+	width:268px;
+	height:203px;
+	position:relative;
+	float:left;
+	margin-right:20px;
+}
+.zw .tu5{
+	padding:15px 0 0 0;
+}
+/*+++++++++++++++++++++*/
+.di{
+	position:absolute;
+	width:100%;
+	height:151px;
+	top:1300px;
+	margin-bottom:20px;
+	background-color:#136ec2;
+}
+.di1{
+	position:absolute;
+	width:980px;;
+	height:151px;
+	background-color:rgb(59,145,206);
+	margin-left:50%;
+	left:-490px;
+}
+.di .di2{
+	position:absolute;
+	background-color:rgb(59,145,206);
+	width:980px;
+	height:28px;
+	margin-top:9px;
+}
+.di .di2 p{
+	font-size:12px;
+	line-height:28px;
+	height:28px;
+	color:#555;
+	margin-left: 30px;
+}
+.di .di1 a:hover{
+	text-decoration:underline;
+}
+.di .di1 a{
+	color:inherit;
+}
+.spanP{
+	padding:10px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.spanP img{
+	margin-top:-80px;
+	margin-left:50%;
+	left:-32px;
+	position:absolute;
+	width:64px;
+	height:64px;
+}
+.wx{
+	position:absolute;
+	margin-top:-18px;
+	margin-left:50%;
+	left:-15px;
+	color:#777;
+	font-size: 12px;
+}
+
+.beian{
+	text-align: center;
+	position: relative;
+	font-size: 12px;
+	color: #555;
+	text-decoration: underline;
+}
